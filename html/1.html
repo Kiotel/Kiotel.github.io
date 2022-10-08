@@ -1,55 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Web</title>
-</head>
-<body>
-<main>
-  <h1>Рецепт быстрого приготовления хумуса. </h1>
+  <meta charset="utf-8">
 
-  <p><strong><b>Хумус</b> — быстро, вкусно, — и ничего лишнего. Этот рецепт был составлен из других рецептов, которые
-    мне попадались в
-    течение многих лет. </strong></p>
-  <p><strong><b>Хумус</b> — это вкусная густая паста, широко используемая в Греческих и Ближневосточных блюдах. Очень
-    вкусно есть его с
-    салатами, мясом на гриле и питой. </strong></p>
-  <h2><em>Ингредиенты</em></h2>
+  <title>Заголовок моей страницы</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- следующие 3 строки нужны для корректного отображения семантических элементов HTML5 в старых версиях Internet Explorer-->
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!-- Вот наш главный заголовок, который используется на всех страницах нашего веб-сайта -->
+
+<header>
+  <h1>Заголовок</h1>
+</header>
+
+<nav>
   <ul>
-    <li>1 банка (400г) турецкого гороха (или бараньего гороха)</li>
-    <li>175г тахини</li>
-    <li>6 вяленых томатов</li>
-    <li>Половинка красного перца</li>
-    <li>Щепотка кайенского перца</li>
-    <li>1 зубчик чеснока</li>
-    <li>Чуть-чуть оливкового масла</li>
+    <li><a href="#">Домашняя страница</a></li>
+    <li><a href="#">Наша команда</a></li>
+    <li><a href="#">Проекты</a></li>
+    <li><a href="#">Контакты</a></li>
   </ul>
-  <h2><em> Рецепт</em></h2>
-  <ol>
-    <li>Очистите чеснок от кожуры и крупно нарежьте.</li>
-    <li>Удалите стебель и семена у перца; крупно нарежьте перец.</li>
-    <li>Добавьте все ингредиенты в пищевой комбайн.</li>
-    <li> Измельчите все ингредиенты до состояния пасты.</li>
-    <li>Если вы хотите "грубый" хумус, измельчайте пару минут.</li
-    <li>Если вам нужен гладкий хумус, измельчайте дольше.</li>
-    <li><em>По вкусу вы также можете добавить в небольших количествах лимон с кориандром, перец чили, лайм с чипотле,
-      хариссу с
-      мятой или же шпинат с брынзой. Попробуйте и решите, что подойдёт вам.</em>
-    </li>
-  </ol>
-  <h2><em>Хранение</em></h2>
-  <p>Храните хумус в запечатанном контейнере в холодильнике.
-    Хумус хранится примерно неделю после приготовления. Если он начнёт пениться, выкидывайте его.
-  </p>
-  <p>Хумус можно хранить в морозильном отделении 2–3 месяца.</p>
+
+  <!-- Форма поиска — это ещё один распространённый нелинейный способ навигации по веб-сайту. -->
+
+  <form>
+    <input type="search" name="q" placeholder="Search query">
+    <input type="submit" value="Go!">
+  </form>
+</nav>
+
+<!-- Здесь основное содержимое нашей страницы -->
+<main>
+
+  <!-- Она содержит статью -->
+  <article>
+    <h2>Заголовок статьи</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+    <h3>Подраздел</h3>
+
+    <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+    <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+
+    <h3>Ещё один подраздел</h3>
+
+    <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+    <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+  </article>
+
+  <!-- Дополнительный контент также может быть вложен в основной контент -->
+  <aside>
+    <h2>Связанные темы</h2>
+
+    <ul>
+      <li><a href="#">Мне нравится стоять рядом с берегом моря</a></li>
+      <li><a href="#">>Мне нравится стоять рядом с морем</a></li>
+      <li><a href="#">Даже на севере Англии</a></li>
+      <li><a href="#">Здесь не перестаёт дождь</a></li>
+      <li><a href="#">Лаааадно...</a></li>
+    </ul>
+  </aside>
+
 </main>
+
+<!-- И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта -->
+
 <footer>
-  <p>
-  <h3>Хотитете узнать больше <em>вкусных </em>рецептов, то жмите:
-    <a href="https://www.mozilla.org/aru/" title="Лучшее место для поиска дополнительной информации
-     о миссии Mozilla и о том, как внести свой вклад"><em> Другие рецепты</em>
-    </a>
-  </h3>
+  <p>©Авторские права никому не принадлежат, 2050. Все права защищены.</p>
 </footer>
+
 </body>
 </html>
